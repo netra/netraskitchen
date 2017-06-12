@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Netra's Kitchen</title>	
+<script src="http://yui.yahooapis.com/3.3.0/build/yui/yui-min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="index.css"/>
+</head>
+
+<style>
+   .slideshow {position: relative; height: 450px; width: 600px; overflow: hidden;}
+   .slideHolder {position: relative; height:312px; width: 493px;}
+   .slide { display: none; position: absolute; }
+   .slide.current { display: block; }
+   .inactive {color: #ccc; }
+</style>
+  
+<script type="text/javascript">
+	    YUI({
+	        modules: {
+	            'gallery-slideshow-base': {
+	                fullpath: 'https://raw.github.com/punteney/yui3-gallery/master/build/gallery-slideshow-base/gallery-slideshow-base-min.js',
+	                requires: ['node', 'event', 'widget']
+	            },
+	            'gallery-slideshow-animated': {
+	                fullpath: 'https://raw.github.com/punteney/yui3-gallery/master/build/gallery-slideshow-animated/gallery-slideshow-animated-min.js',
+	                requires: ['anim', 'gallery-slideshow-base']
+	            }
+	        }
+	    }).use("gallery-slideshow-animated", function(Y) {
+	       
+	    	
+	        Y.SlideshowAnimated.auto();
+	    });
+</script>
+
+
+  
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	
+<div style="margin-left:20%; margin-right:20%;">		
+  		<script type="text/javascript"><!--
+			google_ad_client = "ca-pub-2277858259198664";
+			/* MainPageAd */
+			google_ad_slot = "6642939596";
+			google_ad_width = 728;
+			google_ad_height = 90;
+			//-->
+			</script>
+			<script type="text/javascript"
+			src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+		
+		
+		
+</div>
+		
+<div id="page01"> 
+  <div id="page">
+  	<div id="logo-menu">  			
+  	     <a href='http://netraskitchen.com'><h1>Netra's Kitchen</h1></a>
+  	      
+  	     <ul>
+  	     	<li> <a href="index.html">Home</a></li>
+  	     	<li> <a href="appetizer.html">Breakfast & Snacks</a></li>
+  	     	<li> <a href="curries.html">Curries</a></li>
+  	     	<li> <a href="rice.html">Rice Dishes</a></li>
+  	     	<li> <a href="desserts.html">Desserts</a></li>
+  	     	<li> <a href="salad.html">Salad & Raita</a></li>
+  	     	<li> <a href="bread.html">Indian Breads</a></li>
+  	 	    <li><a href="recipe.html">Recipe Index</a></li>
+  	 	    <li><a href="about.html">About</a></li>
+  	 	     
+  	     </ul>
+  	  </div>
+  	<!--<div id="header">
+  		<h1>Netra's Kitchen</h1>
+				
+	</div>
+  	<div id="menu">
+  	 <ul>
+  	 	<li> <a href="index.html">HOME</a></li>
+  	 	<li><a href="recipe.html">RECIPE</a></li>
+  	 	<li><a href="about.html">ABOUT</a></li>
+  	 	<li><a href="contact.html">CONTACT</a></li>
+  	 </ul>
+  	</div>-->
+  	<div id="main01">
+  	<div id="main">
+  	  <div id="recipe-img">
+	   <!-- img src="hakka-noodle-big.jpg"/-->
+		<div class="slideshow horizontalSlideshow">
+		    <div class="slideHolder">
+		            <div class="slide"><img src="hakka-noodle-big1.jpg"/></div>
+		            <div class="slide"><img src="spring-rolls-big1.jpg"/></div>
+		            <div class="slide"><img src="pav-bhaji-big01.jpg"/></div>
+		            <div class="slide"><img src="taco.jpg"/></div>
+		            <div class="slide"><img src="rice1.jpg"/></div>
+		            <div class="slide"><img src="avocado-salad-big.jpg"/></div>
+		            <div class="slide"><img src="banana-bread-big1.jpg"/></div>
+		            <div class="slide"><img src="gulab-jamun-big1.jpg"/></div>
+		            <div class="slide"><img src="mango-mousse-big.jpg"/></div>
+		            <div class="slide"><img src="kalakand-big.jpg"/></div>
+		            <div class="slide"><img src="idli-big1.jpg"/></div>
+		            <div class="slide"><img src="chole-bhature-big1.jpg"/></div>
+		            <div class="slide"><img src="buttermilk-soup-rice-big1.jpg"/></div>
+		            <!--<div class="slide"><img src="buttermilk.jpg"/></div>-->
+		        </div>
+		    <!--div><a href="" class="play">Play</a> &nbsp; <a href="" class="pause">Pause</a></div -->
+		</div>
+
+
+	  </div>
+	  
+	  <div id="recipe-name" style='color:'> 
+	  	<h2>Explore the fun of cooking delicious Indian food </h2>  
+      </div>
+      
+    </div>  
+    <div id="rec-bar" style='display:none;'>
+       <img src="veg.jpg" />
+   	   <h1>More Recipe collection</h1>
+       <h4><a href="recipe.html" >read more</a> </h4>
+    </div>
+  	</div>
+  	<div class="fb-like" data-send="true" data-width="450" data-show-faces="true" data-font="verdana"></div>
+  </div>
+</div>
+  	<div class="footer">
+  		<p>All rights reserved to Netra - 2012</p>
+  	</div>
+</body>
+</html>
